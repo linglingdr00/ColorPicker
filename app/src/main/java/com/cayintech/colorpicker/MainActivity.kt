@@ -49,13 +49,15 @@ fun MyColorPicker() {
     var selectedColor by remember { mutableStateOf(Color.Red) }
 
     Scaffold(
-        topBar = { TopAppBar(
-            title = { Text(text = "Color Picker Test") },
-            colors = TopAppBarDefaults.topAppBarColors(
-                containerColor = Color.Black,
-                titleContentColor = Color.White
+        topBar = {
+            TopAppBar(
+                title = { Text(text = "Color Picker") },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = Color.Black,
+                    titleContentColor = Color.White
+                )
             )
-        ) }
+        }
     ) { innerPadding ->
         Column(
             modifier = Modifier
